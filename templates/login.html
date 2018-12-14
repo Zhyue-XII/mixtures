@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手工配料系统</title>
+    <link rel="stylesheet" href="{% static 'css/sys/login.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1>领料系统</h1>
+    </div>
+
+    <form>
+        <div class="input-block">
+            <label for="username"> 工号:</label>
+            <div class="input-inline">
+                <input type="text" id="username" name="username" placeholder="请输入姓名..">
+            </div>
+        </div>
+
+        <div class="input-block">
+            <label for="password"> 密码:</label>
+            <div class="input-inline">
+                <input type="password" id="password" name="password" placeholder="请输入密码..">
+            </div>
+        </div>
+    </form>
+
+    <div class="btn-block">
+        <button>登陆</button>
+    </div>
+</div>
+</body>
+</html>
