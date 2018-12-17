@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/dispense/weight.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="wl-wight">
+        <h1>领料称重</h1>
+    </div>
+
+    <div class="weight">
+        <div class="weight-mess">
+            <span id="S1">称1</span>
+            <button onclick="change()">切换</button>
+        </div>
+
+        <div class="dispaly">
+            <p>0.0001 <span>kg</span></p>
+        </div>
+    </div>
+
+    <form action="">
+        <div class="frm-left">
+            <div class="form-block">
+                <label for="">物料号:</label>
+                <div class="form-input">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">物料批次:</label>
+                <div class="form-input">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">仓库:</label>
+                <div class="form-input">
+                    <select name="" id="">
+                        <option value="1">一号仓库</option>
+                        <option value="">临时仓库</option>
+                        <option value="">配料库</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="frm-right">
+            <div class="form-block">
+                <label for="">物料名称:</label>
+                <div class="form-input">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">数量:</label>
+                <div class="form-input">
+                    <input type="number">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="frm-btn">
+        <button class="pad-btn">刷新</button>
+        <button class="pad-btn">确认</button>
+        <button class="pad-btn">返回</button>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+    var num = 1
+    function change() {
+        num ++;
+        if(num %2 == 0){
+            $('#S1').html('称2')
+        } else {
+            $('#S1').html('称1')
+        }
+    }
+    </script>
+{% endblock %}

@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>你好</h1>
-</body>
-</html>
+{% extends 'login.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/dispense/index.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="box">
+        <div class="select-block">
+            <a href="/dispense/allot">领料</a>
+            <a href="#">退库</a>
+        </div>
+        <div class="btn-block">
+            <button onclick="cancel()">返回</button>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

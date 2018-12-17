@@ -1,13 +1,9 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>手工配料系统</title>
+{% block styles %}
     <link rel="stylesheet" href="{% static 'css/sys/login.css' %}">
-</head>
-<body>
-<div class="container">
+{% endblock %}
+{% block content %}
     <div class="title">
         <h1>领料系统</h1>
     </div>
@@ -29,8 +25,13 @@
     </form>
 
     <div class="btn-block">
-        <button>登陆</button>
+        <button onclick="jump()">登陆</button>
     </div>
-</div>
-</body>
-</html>
+{% endblock %}
+{% block scripts %}
+    <script>
+        function jump() {
+            window.location.href = '/dispense'
+        }
+    </script>
+{% endblock %}

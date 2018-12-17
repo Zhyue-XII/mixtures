@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.select-block{
+    margin-top: 25%;
+    overflow: hidden;
+}
+a{
+    display: block;
+    font-size: 40px;
+    padding: 4% 8%;
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    float: left;
+    margin-left: 17%;
+}
+a:first-child{background: green}
+a:nth-child(2){background: blueviolet}
+
+.btn-block{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.btn-block button{
+    background: #009688;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    padding: 1% 10%;
+    color: white;
+}

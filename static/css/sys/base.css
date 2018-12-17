@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 2%;
+}
+
+button.pad-btn {
+    padding: 1% 5%;
+    background: #009688;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 17px;
+}

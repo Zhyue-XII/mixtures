@@ -1,0 +1,83 @@
+.wl-wight{
+    padding: 2%;
+}
+
+.weight {
+    border: 1px solid grey;
+    margin: 2%;
+    min-height: 200px;
+    background: #dcdcdc4a;
+}
+
+.weight-mess{
+    padding: 2%;
+}
+.weight-mess span{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.weight-mess button{
+    width: 70px;
+    margin-left: 20px;
+    height: 35px;
+    background: #009688;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.dispaly{
+    height: 160px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 70px;
+    color: red;
+}
+.dispaly span{
+    font-size: 30px !important;
+    color: black !important;
+}
+
+form{
+    padding: 2%;
+    overflow: hidden;
+}
+.frm-left,.frm-right{
+    float: left;
+    width: 50%;
+}
+
+
+.form-block{
+    overflow: hidden;
+    margin: 3% 0;
+}
+label {
+    float: left;
+    width: 120px;
+    text-align: right;
+    font-size: 21px;
+    margin-right: 10%;
+}
+
+.form-input input,.form-input select{
+    height: 30px;
+    outline: none;
+    padding-left: 2%;
+    font-size: 18px;
+    border: 1px solid grey;
+}
+.form-input select{
+    width: 49%;
+}
+
+
+
+.frm-btn{
+    text-align: center;
+    margin-top: 6%;
+}
+.frm-btn button:nth-child(2){
+    margin: 0 10%;
+}
