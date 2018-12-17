@@ -7,6 +7,7 @@
     padding: 2%;
 }
 
+/*公共按钮*/
 button.pad-btn {
     padding: 1% 5%;
     background: #009688;
@@ -15,3 +16,31 @@ button.pad-btn {
     color: white;
     font-size: 17px;
 }
+.frm-btn{
+    text-align: center;
+    margin-top: 6%;
+}
+
+/*公共表单*/
+label {
+    float: left;
+    width: 120px;
+    text-align: right;
+    font-size: 21px;
+    margin-right: 10%;
+    font-weight: 500 !important;
+}
+
+.form-input input,.form-input select{
+    height: 30px;
+    outline: none;
+    padding-left: 2%;
+    font-size: 18px;
+    border: 1px solid gainsboro;
+    background: none;
+}
+.form-input select{
+    width: 49%;
+}
+
+form{padding: 2%;}

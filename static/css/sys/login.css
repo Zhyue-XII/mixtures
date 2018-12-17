@@ -4,32 +4,27 @@
 }
 
 h1{
-    margin: 13% 0;
+    margin: 13% 0 10%;
     font-size: 48px;
 }
 form{
-    width: 50%;
-    margin: -3% auto;
-}
-label {
-    float: left;
-    width: 120px;
-    text-align: right;
-    font-size: 40px;
-}
-form input{
-    height: 60px;
-    width: 290px;
-    margin-left: 10%;
-    font-size: 35px;
-    outline: none;
-    letter-spacing: 2px;
-    padding-left: 10px;
-    color: gray;
-    border: 1px solid;
+    width: 60%;
+    margin: 0 auto;
 }
 .input-block{
-    margin: 15%  0;
+    overflow: hidden;
+    margin: 2% 0;
+}
+label{
+    font-size: 25px;
+    line-height: 45px;
+}
+.input-inline input {
+    width: 230px;
+    height: 45px;
+    font-size: 20px;
+    border: 1px solid grey;
+    padding: 2%;
 }
 .btn-block,.title{text-align: center}
 .btn-block button{

@@ -20,54 +20,59 @@
     </div>
 
     <form action="">
-        <div class="frm-left">
-            <div class="form-block">
-                <label for="">物料号:</label>
-                <div class="form-input">
-                    <input type="text">
+        <div style="overflow: hidden">
+            <div class="frm-left">
+                <div class="form-block">
+                    <label for="">物料号:</label>
+                    <div class="form-input">
+                        <input type="text" placeholder="请输入物料号.." required>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label for="">物料批次:</label>
+                    <div class="form-input">
+                        <input type="text" placeholder="请输入批次.." required>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label for="">仓库:</label>
+                    <div class="form-input" >
+                        <select name="" id="" required>
+                            <option value="1">一号仓库</option>
+                            <option value="">临时仓库</option>
+                            <option value="">配料库</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-
-            <div class="form-block">
-                <label for="">物料批次:</label>
-                <div class="form-input">
-                    <input type="text">
+            <div class="frm-right">
+                <div class="form-block">
+                    <label for="">物料名称:</label>
+                    <div class="form-input">
+                        <input type="text" placeholder="请输入名称.." required>
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-block">
-                <label for="">仓库:</label>
-                <div class="form-input">
-                    <select name="" id="">
-                        <option value="1">一号仓库</option>
-                        <option value="">临时仓库</option>
-                        <option value="">配料库</option>
-                    </select>
+                <div class="form-block">
+                    <label for="">数量:</label>
+                    <div class="form-input">
+                        <input  type="number" autocomplete="off" placeholder="请输入数字.." required>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="frm-right">
-            <div class="form-block">
-                <label for="">物料名称:</label>
-                <div class="form-input">
-                    <input type="text">
-                </div>
-            </div>
 
-            <div class="form-block">
-                <label for="">数量:</label>
-                <div class="form-input">
-                    <input type="number">
-                </div>
-            </div>
+
+        <div class="frm-btn">
+            <button class="pad-btn" onclick="reload()">刷新</button>
+            <button class="pad-btn">确认</button>
+            <button class="pad-btn" onclick="cancel()">返回</button>
         </div>
     </form>
 
-    <div class="frm-btn">
-        <button class="pad-btn">刷新</button>
-        <button class="pad-btn">确认</button>
-        <button class="pad-btn">返回</button>
-    </div>
+
 
 {% endblock %}
 {% block scripts %}
@@ -80,6 +85,10 @@
         } else {
             $('#S1').html('称1')
         }
+    }
+
+    function reload() {
+        window.location.reload()
     }
     </script>
 {% endblock %}

@@ -53,31 +53,26 @@ form{
     overflow: hidden;
     margin: 3% 0;
 }
-label {
-    float: left;
-    width: 120px;
-    text-align: right;
-    font-size: 21px;
-    margin-right: 10%;
-}
+/*label {*/
+    /*float: left;*/
+    /*width: 120px;*/
+    /*text-align: right;*/
+    /*font-size: 21px;*/
+    /*margin-right: 10%;*/
+    /*font-weight: 500 !important;*/
+/*}*/
 
-.form-input input,.form-input select{
-    height: 30px;
-    outline: none;
-    padding-left: 2%;
-    font-size: 18px;
-    border: 1px solid grey;
-}
-.form-input select{
-    width: 49%;
-}
+/*.form-input input,.form-input select{*/
+    /*height: 30px;*/
+    /*outline: none;*/
+    /*padding-left: 2%;*/
+    /*font-size: 18px;*/
+    /*border: 1px solid gainsboro;*/
+/*}*/
+/*.form-input select{*/
+    /*width: 49%;*/
+/*}*/
 
-
-
-.frm-btn{
-    text-align: center;
-    margin-top: 6%;
-}
 .frm-btn button:nth-child(2){
     margin: 0 10%;
 }

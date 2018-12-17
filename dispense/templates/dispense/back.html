@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/dispense/back.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="tk-title">
+        <h1>退库</h1>
+    </div>
+
+    <div class="tk-weight">
+        <div class="tk-mes">
+            <span>称1</span>
+            <button>切换</button>
+        </div>
+
+        <div class="tk-dispaly">
+            <div>皮重: <span>0.2</span> kg  <span class="weight">净重</span></div>
+            <div>2.362 <span>kg</span></div>
+            <div>毛重: <span>0.33</span> kg</div>
+        </div>
+    </div>
+
+    <form action="">
+        <div style="overflow: hidden">
+            <div class="col-md-6">
+                <div class="form-block">
+                    <label for="">物料号:</label>
+                    <div class="form-input">
+                        <input type="text" placeholder="请输入物料号.." required>
+                    </div>
+                </div>
+
+                <button class="big-btn">整包</button>
+            </div>
+            <div class="col-md-6">
+                <div class="form-block">
+                    <label for="">退库类型:</label>
+                    <div class="form-input">
+                        <select id="" name="" required>
+                            <option value="1">原料库</option>
+                            <option value="2">储藏库</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="big-btn">剩料</button>
+            </div>
+        </div>
+
+
+        <div class="frm-btn">
+            <button class="pad-btn to">退库</button>
+            <button class="pad-btn" onclick="cancel()">返回</button>
+        </div>
+    </form>
+{%  endblock %}

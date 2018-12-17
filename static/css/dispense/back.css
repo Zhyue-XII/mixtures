@@ -1,0 +1,56 @@
+.tk-title{padding: 2%}
+
+.tk-weight{
+    margin: 2%;
+    border: 1px solid grey;
+    min-height: 250px;
+    padding: 2%;
+    background: #f2f2f2;
+}
+
+.tk-mes span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.tk-mes button{
+    width: 70px;
+    margin-left: 20px;
+    height: 35px;
+    background: #009688;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.tk-dispaly{
+    padding: 3%;
+}
+.tk-dispaly div:nth-child(2){
+    text-align: center;
+    font-size: 70px;
+    color: red;
+}
+.tk-dispaly div:nth-child(2) span{
+    font-size: 30px !important;
+    color: black !important;
+    margin-left: 2%;
+}
+span.weight {
+    float: right;
+}
+.to{margin-right: 5%}
+
+.tk-dispaly div:first-child,.tk-dispaly div:last-child{
+    font-size: 20px;
+}
+
+button.big-btn {
+    margin-top: 10%;
+    padding: 4% 10%;
+    background: darkkhaki;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
