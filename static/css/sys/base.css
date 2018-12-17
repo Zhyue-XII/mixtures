@@ -39,6 +39,12 @@ label {
     border: 1px solid gainsboro;
     background: none;
 }
+
+.form-block{
+    overflow: hidden;
+    margin: 3% 0;
+}
+
 .form-input select{
     width: 49%;
 }

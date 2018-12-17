@@ -1,0 +1,44 @@
+.pl-title{
+    margin: 2%;
+    border: 1px solid grey;
+    padding: 2%;
+}
+
+.pl-list{
+    min-height: 200px;
+    border: 1px solid grey;
+    margin: 2%;
+    padding: 2%;
+    overflow: hidden;
+    font-size: 26px;
+}
+
+.works {
+    border: 1px solid gray;
+    float: left;
+    padding: 2% 5%;
+    margin: 4% 2%;
+    width: 177px;
+    height: 76px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.task1{
+    background: #365bff;
+}
+
+.task2{
+    background: #67b168;
+}
+.urgent {
+    font-size: 22px;
+    background: red;
+    color: white;
+}
+.btn-block{
+    padding: 2%;
+}
+.btn-block span{
+    margin: 0 8%;
+}

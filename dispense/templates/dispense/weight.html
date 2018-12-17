@@ -67,7 +67,7 @@
 
         <div class="frm-btn">
             <button class="pad-btn" onclick="reload()">刷新</button>
-            <button class="pad-btn">确认</button>
+            <button class="pad-btn" onclick="saveData()">确认</button>
             <button class="pad-btn" onclick="cancel()">返回</button>
         </div>
     </form>
@@ -89,6 +89,12 @@
 
     function reload() {
         window.location.reload()
+    }
+
+    function saveData() {
+        layer.msg('信息更新成功..', {
+            time: 1500, //1s后自动关闭
+        });
     }
     </script>
 {% endblock %}

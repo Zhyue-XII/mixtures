@@ -1,0 +1,22 @@
+.task-title{
+    margin: 2%;
+    border: 1px solid grey;
+    padding: 2%;
+}
+
+.frm-right,.frm-left{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+form{
+    border: 1px solid grey;
+    min-height: 200px;
+    padding: 7% 0 5%;
+    overflow: hidden;
+    margin: 2%;
+}
+
+.frm-btn button:last-child{
+    margin-left: 10%;
+}

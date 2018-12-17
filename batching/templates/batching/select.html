@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/select.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="select-title">
+        <h1>选择物料</h1>
+    </div>
+
+    <div class="wu-dispaly">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img src="{% static 'img/wl.jpg' %}" alt="">
+    </div>
+
+    <div class="frm-btn">
+        <button class="pad-btn">上一页 </button>
+        <button class="pad-btn" onclick="cancel()"> 返回 </button>
+        <button class="pad-btn">下一页 </button>
+    </div>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/index.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="pl-title">
+        <h1>选择配料任务</h1>
+    </div>
+
+    <div class="pl-list">
+        <div class="works task1">任务一</div>
+        <div class="works task1">任务一</div>
+        <div class="works task1">任务一</div>
+        <div class="works task1">任务一</div>
+
+        <div class="works task2">任务二</div>
+        <div class="works task2">任务二</div>
+        <div class="works task2">任务二</div>
+        <div class="works task2">任务二</div>
+
+        <div class="works urgent">紧急任务</div>
+        <div class="works urgent">紧急任务</div>
+        <div class="works urgent">紧急任务</div>
+
+        <div class="works qa">子配方</div>
+
+        <div class="btn-block">
+            <button class="pad-btn" onclick="addTask()">添加任务</button>
+            <span>
+                <button class="pad-btn">注销</button>
+                <button class="pad-btn">刷新</button>
+            </span>
+            <button class="pad-btn">上一页</button>
+            <button class="pad-btn">下一页</button>
+        </div>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+        function addTask() {
+            window.location.href = '/batching/addTask'
+        }
+
+        $('.works').click(function () {
+            window.location.href = '/batching/select'
+        })
+    </script>
+{% endblock %}

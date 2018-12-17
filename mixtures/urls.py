@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
 from dispense.urls import urlpatterns as dispense_urls
+from batching.urls import urlpatterns as batching_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='login.html')),
     path('dispense/', include(dispense_urls)),
+    path('batching/', include(batching_urls)),
 ]

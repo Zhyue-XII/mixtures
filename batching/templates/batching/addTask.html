@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/addTask.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="task-title">
+        <h1>添加任务</h1>
+    </div>
+
+    <form action="">
+        <div style="overflow: hidden">
+            <div class="frm-left">
+                <div class="form-block">
+                    <label for="">配方名称:</label>
+                    <div class="form-input">
+                        <select name="" id="">
+                            <option value="1">磷酸钾0</option>
+                            <option value="2">磷酸钾A</option>
+                            <option value="3">磷酸钾2n</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label for="">配方方式:</label>
+                    <div class="form-input">
+                        <select name="" id="">
+                            <option value="1">磷酸钾0</option>
+                            <option value="2">磷酸钾A</option>
+                            <option value="3">磷酸钾2n</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label for="">选择容器:</label>
+                    <div class="form-input">
+                        <select name="" id="">
+                            <option value="1">容器A</option>
+                            <option value="2">容器B</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label for="">份数:</label>
+                    <div class="form-input">
+                        <input type="number" placeholder="请输入份数(数字).." required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="frm-right">
+            <div class="form-block">
+                <label for="">自定义1:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请输入名称.." >
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">自定义2:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请输入名称..">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">自定义3:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请输入名称.." >
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">自定义4:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请输入名称..">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="frm-btn">
+            <button class="pad-btn"> 提交</button>
+            <button class="pad-btn" onclick="cancel()"> 返回</button>
+        </div>
+    </form>
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
