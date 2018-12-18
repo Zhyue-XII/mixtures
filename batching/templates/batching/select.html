@@ -9,16 +9,17 @@
     </div>
 
     <div class="wu-dispaly">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
-        <img src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+        <img class="sel-wl" src="{% static 'img/wl.jpg' %}" alt="">
+
     </div>
 
     <div class="frm-btn">
@@ -28,5 +29,9 @@
     </div>
 {% endblock %}
 {% block scripts %}
-
+    <script>
+        $('.sel-wl').click(function () {
+            window.location.href = '/batching/weight'
+        })
+    </script>
 {% endblock %}

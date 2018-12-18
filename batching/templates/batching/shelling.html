@@ -1,0 +1,12 @@
+{% extends 'batching/weight.html' %}
+{% block control %}
+    <script>
+        layer.prompt({title: '称重去皮', formType: 0, shade: 0}, function (text, index) {
+            if(text == ''){
+                //pass
+            }else {
+                layer.close(index);
+            }
+        });
+    </script>
+{% endblock %}

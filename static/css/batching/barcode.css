@@ -1,0 +1,24 @@
+.bar-code,.barcode{
+    padding: 2% 0;
+}
+.frm-left,.frm-right{
+    float: left;
+    width: 50%;
+}
+form{
+    overflow: hidden;
+}
+
+img {
+    width: 80%;
+    height: 60px;
+}
+.bar-box{
+    float: left;
+}
+.barcode{text-align: center;overflow: hidden}
+.bar-box span{font-size: 20px}
+
+button:last-child{
+    margin-left: 10%;
+}

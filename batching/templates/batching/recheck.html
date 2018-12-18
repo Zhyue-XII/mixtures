@@ -1,0 +1,61 @@
+{% extends 'batching/weight.html' %}
+{% block sty %}
+    <style>
+        .modal-dialog{
+            margin-top: 20%;
+        }
+        .modal-content{
+            border-radius:0 ;
+        }
+        .frm-btn button:nth-child(2){
+            margin-left: 10%;
+        }
+        .frm-btn{margin-top: 1% !important;}
+        .modal-body{padding: 5%}
+    </style>
+{% endblock %}
+{% block control %}
+
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>条码复核</h3>
+                    <form style="overflow: hidden">
+                        <div class="form-block">
+                            <label for="">当前物料:</label>
+                            <div class="form-input">
+                                AAAA
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <label for="">物料号:</label>
+                            <div class="form-input">
+                                02
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <label for="">条码复核:</label>
+                            <div class="form-input">
+                                <input type="text" placeholder="请扫描..">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="frm-btn">
+                        <button class="pad-btn" onclick="closeModel()">确定</button>
+                        <button class="pad-btn" onclick="cancel()">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#Modal').modal({
+            backdrop:false,
+        });
+        function closeModel() {
+            $('#Modal').modal('hide')
+        }
+    </script>
+{% endblock %}

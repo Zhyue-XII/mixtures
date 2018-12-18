@@ -1,0 +1,77 @@
+{% extends 'batching/weight.html' %}
+{% block sty %}
+    <style>
+        .modal-dialog{
+            margin-top: 15%;
+        }
+        .modal-content{
+            border-radius:0 ;
+        }
+        .frm-btn button:nth-child(2){
+            margin-left: 10%;
+        }
+        .frm-btn{margin-top: 1% !important;}
+        .modal-body{padding: 5%}
+    </style>
+{% endblock %}
+{% block control %}
+
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>点袋</h3>
+                    <form style="overflow: hidden">
+                        <div class="form-block">
+                            <label for="">物料名称:</label>
+                            <div class="form-input">
+                                <input type="text" placeholder="请输入物料名称..">
+                            </div>
+                        </div>
+
+                        <div class="form-block">
+                            <label for="">目标重量:</label>
+                            <div class="form-input">
+                                <input type="text" placeholder="请输入目标重量..">
+                            </div>
+                        </div>
+
+                        <div class="form-block">
+                            <label for="">每袋重量:</label>
+                            <div class="form-input">
+                                <input type="text" placeholder="请输入每袋重量..">
+                            </div>
+                        </div>
+
+                        <div class="form-block">
+                            <label for="">最大袋数:</label>
+                            <div class="form-input">
+                                <input type="number" placeholder="请输入最大袋称.." required>
+                            </div>
+                        </div>
+
+                        <div class="form-block">
+                            <label for="">输入代数:</label>
+                            <div class="form-input">
+                                <input type="number" placeholder="请输入袋数.." required>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="frm-btn">
+                        <button class="pad-btn" onclick="closeModel()">确定</button>
+                        <button class="pad-btn" onclick="cancel()">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#Modal').modal({
+            backdrop:false,
+        });
+        function closeModel() {
+            $('#Modal').modal('hide')
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,108 @@
+.pl-weight{
+    border: 1px solid grey;
+    min-height: 200px;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.weight-title{
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    padding: 2%;
+    font-weight: 500;
+}
+.weight-title span:nth-child(2){
+    margin-left: 5%;
+}
+.weight-title span:last-child{
+    float: right;
+    margin-top: 10px;
+}
+.weight-title button{
+    background: red;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+
+.pl-dispaly{
+    padding: 2% 2% 1%;
+    font-size: 20px;
+}
+.pl-dispaly p:nth-child(4){
+    padding: 2%;
+}
+.p{float: left;}
+.m{float: right}
+.pl-dispaly p:nth-child(2){overflow: hidden;padding: 2%}
+.pl-dispaly p:nth-child(3){
+    text-align: center;
+    font-size: 70px;
+    color: red;
+}
+.pl-dispaly p:nth-child(3) b{
+    color: black;
+    font-size: 30px !important;
+}
+.pl-dispaly p:last-child{
+    text-align: right;
+    padding-right: 2%;
+}
+
+.layui-progress,.layui-progress-bar{border-radius: 0}
+.pl-btn,.pl-mes{
+    float: left;
+    width: 50%;
+}
+.weight-control{
+    padding: 2% 0;
+}
+.weight-control p{
+    padding: 3% 0;
+    font-size: 20px;
+}
+.weight-control p:last-child{
+    margin-left: 10%;
+}
+.weight-control span{
+    font-size: 20px;
+}
+
+.pl-btn{
+    text-align: right;
+    padding-right: 2%;
+}
+
+.pl-btn button{
+    color: white;
+    width: 160px;
+    padding: 5% 0;
+    border: none;
+    margin: 0 2%;
+}
+.a button:first-child{background: #e51c23;}
+.a button:nth-child(2){background: #575454
+}
+.b button:nth-child(1){background: #009688
+}
+.b button:nth-child(2){background: #8bc34a
+}
+
+.progresss {
+    width: 100%;
+    height: 35px;
+    background: gainsboro;
+    transition: all .8s;
+}
+.pro {
+    width: 1%;
+    background: black;
+    height: 35px;
+    transition: all 1s;
+    color: white;
+    line-height: 35px;
+    text-align: right;
+    padding-right: 1%;
+}

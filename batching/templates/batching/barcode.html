@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/barcode.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="bar-code">
+        <h1>条码点袋</h1>
+    </div>
+    <form>
+        <div class="frm-left">
+            <div class="form-block">
+                <label for="">物料名称:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请输入物料名称..">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">物料重量:</label>
+                <div class="form-input">
+                    <input type="number" placeholder="请输入物料重量..">
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">条码:</label>
+                <div class="form-input">
+                    <input type="text" placeholder="请扫描条码..">
+                </div>
+            </div>
+        </div>
+        <div class="frm-right">
+            <div class="form-block">
+                <label for="">目标重量:</label>
+                <div class="form-input">
+                    <input type="number" placeholder="请输入物料名称..">&nbsp;kg
+                </div>
+            </div>
+
+            <div class="form-block">
+                <label for="">最大袋数:</label>
+                <div class="form-input">
+                    <input type="number" placeholder="请输入物料名称..">&nbsp;袋
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="barcode">
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+
+        <div class="bar-box">
+            <span>条码</span>
+            <img src="{% static 'img/barcode.jpg' %}" alt="">
+        </div>
+    </div>
+
+    <div class="frm-btn">
+        <button class="pad-btn">确认</button>
+        <button class="pad-btn">返回</button>
+    </div>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
