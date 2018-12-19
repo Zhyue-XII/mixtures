@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/weight.css' %}">
+    <style>
+        .modal-dialog{
+            margin-top: 15%;
+        }
+        .modal-content{
+            border-radius:0 ;
+        }
+        .frm-btn button:nth-child(2){
+            margin-left: 10%;
+        }
+        .frm-btn{margin-top: 1% !important;}
+        .modal-body{padding: 5%}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="pl-weight">
+        <div class="weight-title">
+            <span>配方号: 2QA</span>
+            <span>2018-12-13 12:20:21</span>
+        </div>
+        <div class="pl-dispaly">
+            <p>称1</p>
+            <p><span class="p">皮重: <b>2.02</b>&nbsp;kg</span>  <span class="m">净重</span></p>
+            <p>15.6 <b>kg</b></p>
+            <p><span>毛重: <b>1.6</b>&nbsp;kg</span></p>
+            <p>请放置物料到目标重量</p>
+        </div>
+
+        <div class="progresss">
+            <div class="pro"><span>15.6</span>kg</div>
+        </div>
+
+        <div class="weight-control">
+            <div class="pl-mes">
+                <p><label>当前物料: </label><span>零酸钾A</span></p>
+                <p><label>物料号:</label>B<span></span></p>
+                <p><label>下一个物料:</label> <span>B</span></p>
+                <p>AAA-BBB-CCC    <span>1</span>/ <span>2</span></p>
+            </div>
+            <div class="pl-btn">
+                <p class="a">
+                    <button>紧急任务</button>
+                    <button onclick="cancel()">返回</button>
+                </p>
+                <p class="b">
+                    <button>换批</button>
+                    <button>确认</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>条码复核</h3>
+                    <form style="overflow: hidden">
+                        <div class="form-block">
+                            <label for="">输入桶号:</label>
+                            <div class="form-input">
+                                <input type="number" required placeholder="请输入桶号..">
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <label for="">皮重:</label>
+                            <div class="form-input">
+                                <input type="text" placeholder="请输入皮重..">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="frm-btn">
+                        <button class="pad-btn" onclick="closeModel()">确定</button>
+                        <button class="pad-btn" onclick="cancel()">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $('.pro').css({'width':'72%'});
+        $('#Modal').modal({
+            backdrop:false,
+        });
+        function closeModel() {
+            $('#Modal').modal('hide')
+            window.location.href = '/batching/subitem'
+        }
+    </script>
+{% endblock %}

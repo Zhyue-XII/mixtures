@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/finish.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="fd">
+        <h1>本次配方任务完成</h1>
+        <div class="frm-btn">
+            <button class="pad-btn fd-btn">打印单据</button>
+            <button class="pad-btn fd-btn">打印标签</button>
+            <button class="pad-btn fd-btn">退出</button>
+        </div>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

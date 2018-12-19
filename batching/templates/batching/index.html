@@ -23,7 +23,7 @@
         <div class="works urgent">紧急任务</div>
         <div class="works urgent">紧急任务</div>
 
-        <div class="works qa">子配方</div>
+        <div class="qa">子配方</div>
 
         <div class="btn-block">
             <button class="pad-btn" onclick="addTask()">添加任务</button>
@@ -45,6 +45,9 @@
 
         $('.works').click(function () {
             window.location.href = '/batching/select'
+        })
+        $('.qa').click(function () {
+            window.location.href = '/batching/qaweight'
         })
     </script>
 {% endblock %}

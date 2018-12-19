@@ -13,7 +13,7 @@
     font-size: 26px;
 }
 
-.works {
+.works,.qa {
     border: 1px solid gray;
     float: left;
     padding: 2% 5%;

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/batching/subitem.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="stm-title">
+        <h1> 选择物料-QA </h1>
+    </div>
+
+    <div class="stm-display">
+        <div class="qa-box">
+            <span class="qa-sel">A</span>
+            <span class="qa-sel">A</span>
+            <span class="qa-sel">A</span>
+            <span class="qa-sel">A</span>
+            <span class="qa-sel">A</span>
+            <span class="qa-sel">A</span>
+        </div>
+
+
+        <div class="frm-btn">
+            <button class="pad-btn">上一页</button>
+            <button class="pad-btn" onclick="cancel()">返回</button>
+            <button class="pad-btn">上一页</button>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $('.qa-sel').click(function () {
+            window.location.href = '/batching/weight'
+        })
+    </script>
+{% endblock %}

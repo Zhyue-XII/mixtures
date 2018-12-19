@@ -1,0 +1,13 @@
+.fd{
+    text-align: center;
+    margin-top: 25%;
+}
+.frm-btn{
+    margin-top: 10%;
+}
+.fd-btn:nth-child(2){
+    margin: 0 10%;
+}
+button.pad-btn.fd-btn {
+    padding: 3% 5%;
+}

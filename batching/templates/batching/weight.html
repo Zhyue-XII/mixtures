@@ -38,7 +38,7 @@
                 </p>
                 <p class="b">
                     <button>换批</button>
-                    <button>确认</button>
+                    <button onclick="finished()">确认</button>
                 </p>
             </div>
         </div>
@@ -48,5 +48,8 @@
 {% block scripts %}
     <script>
         $('.pro').css({'width':'72%'});
+        function finished() {
+            window.location.href = '/batching/finish'
+        }
     </script>
 {% endblock %}
